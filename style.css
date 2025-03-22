@@ -1,67 +1,242 @@
-
-body {
-  background-color: #0d1117;
-  color: #c9d1d9;
-  font-family: 'Segoe UI', sans-serif;
+/* Reset & Global Settings */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: 'Fira Code', monospace;
+  color: #c9d1d9;
+  background: #000;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* Matrix Canvas Background - DO NOT MODIFY */
+#matrix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* Container for Main Content */
 .container {
-  max-width: 800px;
+  width: 90%;
   margin: 2rem auto;
   padding: 2rem;
-  background: #161b22;
+  background: rgba(22, 27, 34, 0.95);
   border-radius: 10px;
-  box-shadow: 0 0 10px #000;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  position: relative;
+  z-index: 1;
 }
 
+/* Header Styles */
 header {
   text-align: center;
   margin-bottom: 2rem;
 }
 
+header img {
+  border-radius: 50%;
+  border: 3px solid #026f71;
+  margin-bottom: 1rem;
+}
+
 header h1 {
-  color: #58a6ff;
-}
-
-a {
-  color: #8b949e;
-  text-decoration: none;
-}
-
-section {
-  margin-bottom: 1.5rem;
-}
-
-section h2 {
-  color: #58a6ff;
-  border-bottom: 1px solid #30363d;
-  padding-bottom: 0.3rem;
+  font-size: 2.8rem;
+  color: #026f71;
   margin-bottom: 0.5rem;
 }
 
+header p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+header nav {
+  margin-top: 1rem;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+}
+
+header nav ul li a {
+  color: #8b949e;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+header nav ul li a:hover {
+  background: #026f71;
+  color: #fff;
+}
+
+/* Section Styles */
+section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-bottom: 1px solid #30363d;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+section:last-of-type {
+  border-bottom: none;
+}
+
+section.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+section h2 {
+  font-size: 1.8rem;
+  color: #026f71;
+  margin-bottom: 1rem;
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.skills-grid h3 {
+  margin-bottom: 0.5rem;
+  color: #026f71;
+}
+
+/* Experience Section */
+.experience .job {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.experience .job h3 {
+  color: #026f71;
+  margin-bottom: 0.3rem;
+}
+
+.experience .job span {
+  font-size: 0.9rem;
+  color: #8b949e;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form label {
+  font-size: 1rem;
+  color: #8b949e;
+}
+
+form input, form textarea {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  background: #1d2228;
+  color: #c9d1d9;
+  font-family: inherit;
+}
+
+form input:focus, form textarea:focus {
+  outline: 2px solid #026f71;
+}
+
+form button {
+  align-self: flex-start;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background: #026f71;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #035d64;
+}
+
+/* Public Releases Links */
+section#public ul {
+  list-style: none;
+  padding: 0;
+}
+
+section#public ul li a {
+  color: #026f71;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+section#public ul li a:hover {
+  color: #035d64;
+}
+
+/* Footer Styles */
 footer {
   text-align: center;
   font-size: 0.9rem;
   color: #6e7681;
   margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #30363d;
 }
 
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+footer .social {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
   gap: 10px;
 }
 
-.gallery img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-  transition: transform 0.2s;
-  cursor: pointer;
+footer .social a {
+  color: #8b949e;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
-.gallery img:hover {
-  transform: scale(1.05);
+footer .social a:hover {
+  color: #026f71;
+}
+
+/* Fade-in Animation */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }

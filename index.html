@@ -1,48 +1,82 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>TrxppyHxppy | Developer Portfolio</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nick T. - Portfolio</title>
+
+  <link rel="shortcut icon" href="images/memoji.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css" />
-  <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+
+  <meta property="og:title" content="Nick T. - Portfolio">
+  <meta property="og:site_name" content="ItsNixk">
+  <meta property="og:url" content="https://itsnick.io/">
+  <meta property="og:description"
+    content="Hey! My name is Nick, I am a Software Engineer, and PC Gamer. Thanks for checking out my portfolio.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://itsnick.io/images/memoji.png">
 </head>
+
 <body>
+  <canvas id="matrix"></canvas>
+
   <div class="container">
-    <header>
-      <h1>TrxppyHxppy</h1>
-      <p>Full-Stack Developer & System Admin</p>
-      <a href="https://github.com/trxppyhxppy" target="_blank">GitHub</a> |
-      <a href="https://discord.com/users/659864108895698970" target="_blank">Discord</a>
+    <header class="fade-in">
+      <img src="./images/memoji.png" alt="Nick T." width="80">
+      <h1>ItsNixk (Nick)</h1>
+      <p>Full-Stack Developer &amp; System Admin</p>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#public">Public</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <section>
+    <section id="about" class="fade-in">
       <h2>About Me</h2>
-      <p>I specialize in bot development, server administration, and community tools primarily focused around FiveM, TeamSpeak, and Discord.</p>
+      <p>Hey! My name is Nick, I am a Software Engineer and PC Gamer. Thanks for checking out my portfolio.</p>
+      <br>
+      <p>I specialize in bot development, server administration, and community tools primarily focused around FiveM,
+        TeamSpeak, and Discord.</p>
     </section>
 
-    <section>
-      <h2>Development Skills</h2>
-      <ul>
-        <li>FiveM Development (LUA, C#, JavaScript)</li>
-        <li>TeamSpeak 3 (Bots, ServerQuery, Permissions)</li>
-        <li>Bot Development (Discord, TS, Invision)</li>
-        <li>CAD Integrations (Bubble, Sonoran, Rocket, Snaily)</li>
-        <li>Website Development (Invision Community)</li>
-        <li>System Admin (Linux, Windows, Pterodactyl, Proxmox VE)</li>
-      </ul>
+    <section id="skills" class="fade-in">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div>
+          <h3>Development Skills</h3>
+          <ul>
+            <li>FiveM Resource Development (LUA, C#, JavaScript)</li>
+            <li>TeamSpeak 3 (Bots, ServerQuery, Permissions)</li>
+            <li>Bot Development (Discord, TS, Invision)</li>
+            <li>CAD Integrations (Bubble, Sonoran, Rocket, Snaily, Custom)</li>
+            <li>Website Development (Invision Community, HTML/CSS)</li>
+            <li>System Admin (Linux, Windows, Pterodactyl/Pelican, Proxmox VE)</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Technical Skills</h3>
+          <ul>
+            <li><strong>Languages:</strong> HTML, CSS, JavaScript, TypeScript, LUA, Node.js, PHP, C#, SQL, JSON</li>
+            <li><strong>Version Control:</strong> Git, GitLab, GitHub, GitKraken</li>
+            <li><strong>Operating Systems:</strong> Windows, Linux</li>
+            <li><strong>Project Management:</strong> Trello, GitLab Issues Boards, GitHub Projects</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h2>Languages</h2>
-      <p>HTML, CSS, JavaScript, TypeScript, LUA, Node.js, PHP, C#, SQL, JSON</p>
-    </section>
-
-    <section>
-      <h2>Projects & Features</h2>
-      <ul>
-        <li><strong>Admin Bot:</strong> Mass ban/kick, nickname management</li>
+    <section id="projects" class="fade-in" style="text-align: center; margin: 0 auto;">
+      <h2>Projects &amp; Features</h2>
+      <ul style="display: inline-block; text-align: left;">
+        <li><strong>Admin Bot:</strong> Community management bot for whitelisted FiveM communities</li>
         <li><strong>Verification Bot:</strong> Sync Invision accounts with Discord roles</li>
         <li><strong>Support Bot:</strong> Ticket system and helper tools</li>
         <li><strong>Google Sheets Bot:</strong> Read and return data from Sheets</li>
@@ -51,36 +85,69 @@
       </ul>
     </section>
 
-    <section>
-      <h2>TeamSpeak Work</h2>
-      <p>Built and managed multiple servers, strong backend familiarity (permissions, scripting, bots).</p>
-    </section>
-
-    <section>
-      <h2>FiveM Experience</h2>
-      <p>Worked with multiple large whitelisted communities. Public releases available on my old GitHub.</p>
-    </section>
-
-    <section>
-      <h2>Project Gallery</h2>
-      <div class="gallery">
-<a href="images/screenshot1.png" data-lightbox="project-gallery" data-title="Screenshot 1"><img src="images/screenshot1.png" alt="Screenshot 1"></a>
-<a href="images/screenshot2.png" data-lightbox="project-gallery" data-title="Screenshot 2"><img src="images/screenshot2.png" alt="Screenshot 2"></a>
-<a href="images/screenshot3.png" data-lightbox="project-gallery" data-title="Screenshot 3"><img src="images/screenshot3.png" alt="Screenshot 3"></a>
-<a href="images/screenshot4.png" data-lightbox="project-gallery" data-title="Screenshot 4"><img src="images/screenshot4.png" alt="Screenshot 4"></a>
-<a href="images/screenshot5.png" data-lightbox="project-gallery" data-title="Screenshot 5"><img src="images/screenshot5.png" alt="Screenshot 5"></a>
-<a href="images/screenshot6.png" data-lightbox="project-gallery" data-title="Screenshot 6"><img src="images/screenshot6.png" alt="Screenshot 6"></a>
-<a href="images/screenshot7.png" data-lightbox="project-gallery" data-title="Screenshot 7"><img src="images/screenshot7.png" alt="Screenshot 7"></a>
-<a href="images/screenshot8.png" data-lightbox="project-gallery" data-title="Screenshot 8"><img src="images/screenshot8.png" alt="Screenshot 8"></a>
-<a href="images/screenshot9.png" data-lightbox="project-gallery" data-title="Screenshot 9"><img src="images/screenshot9.png" alt="Screenshot 9"></a>
-<a href="images/screenshot10.png" data-lightbox="project-gallery" data-title="Screenshot 10"><img src="images/screenshot10.png" alt="Screenshot 10"></a>
+    <section id="experience" class="fade-in">
+      <h2>Experience</h2>
+      <div class="experience">
+        <div class="job">
+          <h3>Development Manager for OceanstateRP</h3>
+          <span>2024 - Current</span>
+          <p>Department Head, responsible for involvement in public relations, as well as having experience within
+            content and software projects. Responsibilities for this position include:</p>
+          <ul style="padding-left: 40px;">
+            <li>Maintaining departmental documents, including the Standard Operating Procedures (SOP), and all Trello,
+              Discord, and TeamSpeak information</li>
+            <li>Addresses command questions/concerns from the Lead Developers and enforces appropriate/relevant rules
+              and regulations for the community</li>
+            <li>Examining personnel and candidates for development teams, reviewing these applications with members of
+              the Development Chain of Command</li>
+          </ul>
+        </div>
+        <div class="job">
+          <h3>Software Engineer/Support Staff for Phoenix Development</h3>
+          <span>2024 - Current</span>
+          <p>Assist in the creation of community projects and ensure users of PhoenixCAD receive top-notch assistance
+            and a smooth operational experience.</p>
+        </div>
+        <div class="job">
+          <h3>Asst. Deputy Director/System Administrator at AfterHoursRP</h3>
+          <span>2023 - 2024</span>
+          <p>Head Administrator, responsible for involvement in public relations, oversight of Staff/Admins, and
+            Development</p>
+        </div>
+        <div class="job">
+          <h3>Director / Lead Developer for SouthValleyRP</h3>
+          <span>2022 - 2023</span>
+          <p>Community Leader, responsible for involvement in all community finances and regulations.</p>
+        </div>
+        <div class="job">
+          <h3>Software Developer for WorldwideRP</h3>
+          <span>2021 - 2022</span>
+          <p>Assist Senior Developers and Part-time Developers with tasks, while also being allowed to do personal
+            projects/independent projects.</p>
+        </div>
       </div>
     </section>
 
-    <footer>
-      <p>© 2025 TrxppyHxppy</p>
+    <section id="public" class="fade-in">
+      <h2>Public Releases</h2>
+      <p>Most projects are private and not released to the public. However, you can check out some of my public work:
+      </p>
+      <ul>
+        <li><a href="https://github.com/ItsNixk/fivem-admin-bot" target="_blank">FiveM Discord Admin Bot</a></li>
+      </ul>
+    </section>
+
+    <footer class="fade-in">
+      <p>© 2025 ItsNixk. All Rights Reserved.</p>
+      <div class="social">
+        <a href="https://github.com/ItsNixk" target="_blank">GitHub</a>
+        <a href="https://discord.com/users/659864108895698970" target="_blank">Discord</a>
+      </div>
     </footer>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox.min.js"></script>
+
+  <!-- Custom Script (Matrix effect and scroll reveal) -->
+  <script src="script.js"></script>
 </body>
+
 </html>
