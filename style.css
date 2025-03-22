@@ -68,10 +68,14 @@ header nav ul {
   justify-content: center;
   gap: 15px;
   padding: 0;
+  flex-wrap: wrap;
 }
 
-header nav ul li {
-  display: inline;
+@media (max-width: 600px) {
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 header nav ul li a {
