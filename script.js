@@ -45,9 +45,11 @@ document.addEventListener("DOMContentLoaded", function () {
         appearOnScroll.observe(fader);
     });
 
+    console.log("%cHey there, fellow dev 👋", "color:#026f71; font-size: 16px; font-weight: bold;");
+});
+
 const toggle = document.getElementById('theme-toggle');
 toggle.addEventListener('click', () => {
     document.body.classList.toggle('light-mode');
 });
 
-});
