@@ -46,6 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     console.log("%cHey there, fellow dev 👋", "color:#026f71; font-size: 16px; font-weight: bold;");
+    console.log("%cThis is a simple portfolio page for ItsNixk.", "color:#026f71; font-size: 14px;");
 });
 
 const toggle = document.getElementById('theme-toggle');
