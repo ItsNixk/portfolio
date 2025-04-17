@@ -44,4 +44,10 @@ document.addEventListener("DOMContentLoaded", function () {
     faders.forEach(fader => {
         appearOnScroll.observe(fader);
     });
+
+const toggle = document.getElementById('theme-toggle');
+toggle.addEventListener('click', () => {
+    document.body.classList.toggle('light-mode');
+});
+
 });

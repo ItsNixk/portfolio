@@ -39,6 +39,7 @@ body {
 header {
   text-align: center;
   margin-bottom: 2rem;
+  position: relative;
 }
 
 header img {
@@ -244,3 +245,15 @@ footer .social a:hover {
     opacity: 1;
   }
 }
+
+body.light-mode {
+  background: #f4f4f4;
+  color: #111;
+}
+body.light-mode .container {
+  background: #fff;
+}
+body.light-mode a:hover {
+  color: #333;
+}
+
