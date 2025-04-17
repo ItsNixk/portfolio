@@ -246,14 +246,72 @@ footer .social a:hover {
   }
 }
 
+.icon-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.icon-grid img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s;
+}
+
+.icon-grid img:hover {
+  transform: scale(1.2);
+}
+
 body.light-mode {
   background: #f4f4f4;
   color: #111;
 }
+
 body.light-mode .container {
   background: #fff;
 }
+
 body.light-mode a:hover {
   color: #333;
 }
 
+.tooltip {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+}
+
+.tooltip img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.2s ease;
+}
+
+.tooltip:hover img {
+  transform: scale(1.1);
+}
+
+.tooltip-text {
+  visibility: hidden;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 5px 8px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  white-space: nowrap;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
