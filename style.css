@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Fira Code', monospace;
+  font-family: "Fira Code", monospace;
   color: #c9d1d9;
   background: #000;
   overflow-x: hidden;
@@ -135,7 +135,7 @@ section h2 {
   padding: 1rem;
   background: rgba(0, 0, 0, 0.3);
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .experience .job h3 {
@@ -162,7 +162,8 @@ form label {
   color: #8b949e;
 }
 
-form input, form textarea {
+form input,
+form textarea {
   padding: 8px;
   border: none;
   border-radius: 5px;
@@ -171,7 +172,8 @@ form input, form textarea {
   font-family: inherit;
 }
 
-form input:focus, form textarea:focus {
+form input:focus,
+form textarea:focus {
   outline: 2px solid #026f71;
 }
 

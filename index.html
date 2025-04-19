@@ -1,233 +1,430 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nick T. - Portfolio</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nick T. - Portfolio</title>
+    <link rel="shortcut icon" href="images/memoji.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="shortcut icon" href="images/memoji.png" type="image/x-icon">
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Nick T. - Portfolio" />
+    <meta property="og:site_name" content="ItsNixk" />
+    <meta property="og:url" content="https://itsnick.io/" />
+    <meta
+      property="og:description"
+      content="Hey! My name is Nick, I am a Software Engineer and PC Gamer. Thanks for checking out my portfolio. I specialize in bot development, server administration, and community tools primarily focused around FiveM,
+    TeamSpeak, and Discord."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#026f71" />
+    <meta property="og:image" content="https://itsnick.io/images/memoji.png" />
+  </head>
 
-  <meta property="og:title" content="Nick T. - Portfolio">
-  <meta property="og:site_name" content="ItsNixk">
-  <meta property="og:url" content="https://itsnick.io/">
-  <meta property="og:description" content="Hey! My name is Nick, I am a Software Engineer and PC Gamer. Thanks for checking out my portfolio. I specialize in bot development, server administration, and community tools primarily focused around FiveM,
-    TeamSpeak, and Discord.">
-  <meta property="og:type" content="website">
-  <meta name="theme-color" content="#026f71">
-  <meta property="og:image" content="https://itsnick.io/images/memoji.png">
-</head>
+  <body>
+    <canvas id="matrix"></canvas>
 
-<body>
-  <canvas id="matrix"></canvas>
+    <div class="container">
+      <header class="fade-in">
+        <button
+          id="theme-toggle"
+          class="theme-button"
+          style="
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            color: white;
+            cursor: pointer;
+          "
+        >
+          <svg
+            id="theme-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            style="vertical-align: middle; margin-right: 5px"
+          >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <span id="theme-text">Toggle Theme</span>
+        </button>
 
-  <div class="container">
-    <header class="fade-in">
-      <button id="theme-toggle" class="theme-button"
-        style="position: absolute; right: 10px; top: 10px; background-color: rgba(0, 0, 0, 0.5); border: none; border-radius: 5px; padding: 10px; color: white; cursor: pointer;">
-        <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-          style="vertical-align:middle; margin-right: 5px;">
-          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-        </svg>
-        <span id="theme-text">Toggle Theme</span>
-      </button>
+        <img src="./images/memoji.png" alt="Nick T." width="80" />
+        <h1>ItsNixk</h1>
+        <p>Full-Stack Developer &amp; System Admin</p>
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#public">Releases</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
 
-      <img src="./images/memoji.png" alt="Nick T." width="80">
-      <h1>ItsNixk</h1>
-      <p>Full-Stack Developer &amp; System Admin</p>
-      <nav>
+      <section
+        id="about"
+        class="fade-in"
+        style="text-align: center; margin: 0 auto"
+      >
+        <h2>About Me</h2>
+        <p>
+          Hey! My name is Nick, I am a Software Engineer and PC Gamer. Thanks
+          for checking out my portfolio.
+        </p>
+        <br />
+        <p>
+          I specialize in bot development, server administration, and community
+          tools primarily focused around FiveM, TeamSpeak, and Discord.
+        </p>
+      </section>
+
+      <section
+        id="skills"
+        class="fade-in"
+        style="text-align: center; margin: 0 auto"
+      >
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+          <div class="icon-grid">
+            <div class="tooltip">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-original.svg"
+                alt="Ubuntu"
+              /><span class="tooltip-text">Ubuntu</span>
+            </div>
+            <div class="tooltip">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg"
+                alt="Windows"
+              /><span class="tooltip-text">Windows</span>
+            </div>
+            <div class="tooltip">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/debian/debian-original.svg"
+                alt="Debian"
+              /><span class="tooltip-text">Debian</span>
+            </div>
+            <div class="tooltip">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/portainer/portainer-original.svg"
+                alt="Portainer"
+              /><span class="tooltip-text">Portainer</span>
+            </div>
+            <div class="tooltip">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg"
+                alt="Azure"
+              /><span class="tooltip-text">Azure</span>
+            </div>
+            <div class="tooltip">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                alt="Git"
+              /><span class="tooltip-text">Git</span>
+            </div>
+            <div class="tooltip">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg"
+                alt="GitLab"
+              /><span class="tooltip-text">GitLab</span>
+            </div>
+            <div class="tooltip">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-original.svg"
+                alt="Visual Studio"
+              /><span class="tooltip-text">Visual Studio</span>
+            </div>
+            <div class="tooltip">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                alt="Visual Studio Code"
+              /><span class="tooltip-text">Visual Studio Code</span>
+            </div>
+            <div class="tooltip">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-original.svg"
+                alt="Trello"
+              /><span class="tooltip-text">Trello</span>
+            </div>
+            <div class="tooltip">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg"
+                alt="Jira"
+              /><span class="tooltip-text">Jira</span>
+            </div>
+            <div class="tooltip">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cloudflare/cloudflare-original.svg"
+                alt="Cloudflare"
+              /><span class="tooltip-text">Cloudflare</span>
+            </div>
+            <div class="tooltip">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
+                alt="Amazon Web Services"
+              /><span class="tooltip-text">Amazon Web Services</span>
+            </div>
+            <div class="tooltip">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg"
+                alt="Google Cloud"
+              /><span class="tooltip-text">Google Cloud</span>
+            </div>
+            <div class="tooltip">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg"
+                alt="NGINX"
+              /><span class="tooltip-text">NGINX</span>
+            </div>
+            <div class="tooltip">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg"
+                alt="Apache"
+              /><span class="tooltip-text">Apache</span>
+            </div>
+            <div class="tooltip">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/composer/composer-original.svg"
+                alt="Composer"
+              /><span class="tooltip-text">Composer</span>
+            </div>
+            <div class="tooltip">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                alt="MySQL"
+              /><span class="tooltip-text">MySQL</span>
+            </div>
+            <div class="tooltip">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mariadb/mariadb-original.svg"
+                alt="MariaDB"
+              /><span class="tooltip-text">MariaDB</span>
+            </div>
+            <div class="tooltip">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                alt="MongoDB"
+              /><span class="tooltip-text">MongoDB</span>
+            </div>
+            <div class="tooltip">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg"
+                alt="Redis"
+              /><span class="tooltip-text">Redis</span>
+            </div>
+            <div class="tooltip">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+                alt="C#"
+              /><span class="tooltip-text">C#</span>
+            </div>
+            <div class="tooltip">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg"
+                alt=".NET"
+              /><span class="tooltip-text">.NET</span>
+            </div>
+            <div class="tooltip">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-original.svg"
+                alt="LUA"
+              /><span class="tooltip-text">LUA</span>
+            </div>
+            <div class="tooltip">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+                alt="PHP"
+              /><span class="tooltip-text">PHP</span>
+            </div>
+            <div class="tooltip">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg"
+                alt="Laravel"
+              /><span class="tooltip-text">Laravel</span>
+            </div>
+            <div class="tooltip">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                alt="JavaScript"
+              /><span class="tooltip-text">JavaScript</span>
+            </div>
+            <div class="tooltip">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                alt="TypeScript"
+              /><span class="tooltip-text">TypeScript</span>
+            </div>
+            <div class="tooltip">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                alt="HTML"
+              /><span class="tooltip-text">HTML</span>
+            </div>
+            <div class="tooltip">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                alt="CSS"
+              /><span class="tooltip-text">CSS</span>
+            </div>
+            <div class="tooltip">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                alt="Node.js"
+              /><span class="tooltip-text">Node.js</span>
+            </div>
+            <div class="tooltip">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg"
+                alt="Angular"
+              /><span class="tooltip-text">Angular</span>
+            </div>
+            <div class="tooltip">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/discordjs/discordjs-original.svg"
+                alt="Discord.js"
+              /><span class="tooltip-text">Discord.js</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="experience"
+        class="fade-in"
+        style="text-align: center; margin: 0 auto"
+      >
+        <h2>Experience</h2>
+        <div class="experience">
+          <div class="job">
+            <h3>Founder of ItsNixk</h3>
+            <span>2025 - Current</span>
+            <p>
+              Founded a software development business specializing in custom bot
+              development, server administration, and community tools.
+              Responsibilities include:
+            </p>
+            <ul style="display: inline-block; text-align: left">
+              <li>Managing client relationships and project deliverables</li>
+              <li>
+                Developing custom software solutions for diverse client needs
+              </li>
+              <li>Overseeing technical infrastructure and service quality</li>
+            </ul>
+          </div>
+          <div class="job">
+            <h3>Support Staff for RelyHost</h3>
+            <span>2025 - Current</span>
+            <p>
+              Provide comprehensive technical support and solutions for VPS and
+              web hosting clients, ensuring optimal server performance and
+              customer satisfaction.
+            </p>
+          </div>
+          <div class="job">
+            <h3>Software Engineer/Support Staff for Phoenix Development</h3>
+            <span>2024 - Current</span>
+            <p>
+              Lead software development initiatives and provide technical
+              support for PhoenixCAD platform, focusing on:
+            </p>
+            <ul style="display: inline-block; text-align: left">
+              <li>
+                Developing and maintaining custom software solutions for
+                community projects
+              </li>
+              <li>
+                Delivering exceptional user support and troubleshooting
+                assistance
+              </li>
+              <li>Ensuring optimal system performance and user experience</li>
+            </ul>
+          </div>
+          <div class="job">
+            <h3>Management for After Hours Development</h3>
+            <span>2023 - 2025</span>
+            <p>
+              Lead the development and delivery of custom community solutions
+              while managing client relationships. Key responsibilities include:
+            </p>
+            <ul style="display: inline-block; text-align: left">
+              <li>
+                Overseeing project lifecycles from conception to deployment
+              </li>
+              <li>Ensuring exceptional client support and communication</li>
+              <li>Managing payment processing and financial operations</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="public"
+        class="fade-in"
+        style="text-align: center; margin: 0 auto"
+      >
+        <h2>Public Releases</h2>
+        <p>
+          Most projects are private and not released to the public. However, you
+          can check out some of my public work:
+        </p>
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#public">Releases</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="https://github.com/ItsNixk/fivem-admin-bot" target="_blank"
+              >FiveM Discord Admin Bot</a
+            >
+          </li>
         </ul>
-      </nav>
-    </header>
+      </section>
 
-    <section id="about" class="fade-in" style="text-align: center; margin: 0 auto;">
-      <h2>About Me</h2>
-      <p>Hey! My name is Nick, I am a Software Engineer and PC Gamer. Thanks for checking out my portfolio.</p>
-      <br>
-      <p>I specialize in bot development, server administration, and community tools primarily focused around FiveM,
-        TeamSpeak, and Discord.</p>
-    </section>
+      <section
+        id="contact"
+        class="fade-in"
+        style="text-align: center; margin: 0 auto"
+      >
+        <h2>Contact Us</h2>
+        <form action="https://formspree.io/f/xnnpkqpd" method="POST">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required />
 
-    <section id="skills" class="fade-in" style="text-align: center; margin: 0 auto;">
-      <h2>Technical Skills</h2>
-      <div class="skills-grid">
-        <div class="icon-grid">
-          <div class="tooltip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-original.svg"
-              alt="Ubuntu"><span class="tooltip-text">Ubuntu</span></div>
-          <div class="tooltip"><img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg"
-              alt="Windows"><span class="tooltip-text">Windows</span></div>
-          <div class="tooltip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/debian/debian-original.svg"
-              alt="Debian"><span class="tooltip-text">Debian</span></div>
-          <div class="tooltip"><img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/portainer/portainer-original.svg"
-              alt="Portainer"><span class="tooltip-text">Portainer</span></div>
-          <div class="tooltip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg"
-              alt="Azure"><span class="tooltip-text">Azure</span></div>
-          <div class="tooltip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-              alt="Git"><span class="tooltip-text">Git</span></div>
-          <div class="tooltip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg"
-              alt="GitLab"><span class="tooltip-text">GitLab</span></div>
-          <div class="tooltip"><img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-original.svg"
-              alt="Visual Studio"><span class="tooltip-text">Visual Studio</span></div>
-          <div class="tooltip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
-              alt="Visual Studio Code"><span class="tooltip-text">Visual Studio Code</span></div>
-          <div class="tooltip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-original.svg"
-              alt="Trello"><span class="tooltip-text">Trello</span></div>
-          <div class="tooltip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg"
-              alt="Jira"><span class="tooltip-text">Jira</span></div>
-          <div class="tooltip"><img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cloudflare/cloudflare-original.svg"
-              alt="Cloudflare"><span class="tooltip-text">Cloudflare</span></div>
-          <div class="tooltip"><img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
-              alt="Amazon Web Services"><span class="tooltip-text">Amazon Web Services</span></div>
-          <div class="tooltip"><img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg"
-              alt="Google Cloud"><span class="tooltip-text">Google Cloud</span></div>
-          <div class="tooltip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg"
-              alt="NGINX"><span class="tooltip-text">NGINX</span></div>
-          <div class="tooltip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg"
-              alt="Apache"><span class="tooltip-text">Apache</span></div>
-          <div class="tooltip"><img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/composer/composer-original.svg"
-              alt="Composer"><span class="tooltip-text">Composer</span></div>
-          <div class="tooltip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-              alt="MySQL"><span class="tooltip-text">MySQL</span></div>
-          <div class="tooltip"><img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mariadb/mariadb-original.svg" alt="MariaDB"><span
-              class="tooltip-text">MariaDB</span></div>
-          <div class="tooltip"><img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"><span
-              class="tooltip-text">MongoDB</span></div>
-          <div class="tooltip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg"
-              alt="Redis"><span class="tooltip-text">Redis</span></div>
-          <div class="tooltip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
-              alt="C#"><span class="tooltip-text">C#</span></div>
-          <div class="tooltip"><img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg" alt=".NET"><span
-              class="tooltip-text">.NET</span></div>
-          <div class="tooltip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-original.svg"
-              alt="LUA"><span class="tooltip-text">LUA</span></div>
-          <div class="tooltip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
-              alt="PHP"><span class="tooltip-text">PHP</span></div>
-          <div class="tooltip"><img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel"><span
-              class="tooltip-text">Laravel</span></div>
-          <div class="tooltip"><img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-              alt="JavaScript"><span class="tooltip-text">JavaScript</span></div>
-          <div class="tooltip"><img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
-              alt="TypeScript"><span class="tooltip-text">TypeScript</span></div>
-          <div class="tooltip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-              alt="HTML"><span class="tooltip-text">HTML</span></div>
-          <div class="tooltip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-              alt="CSS"><span class="tooltip-text">CSS</span></div>
-          <div class="tooltip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-              alt="Node.js"><span class="tooltip-text">Node.js</span></div>
-          <div class="tooltip"><img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg" alt="Angular"><span
-              class="tooltip-text">Angular</span></div>
-          <div class="tooltip"><img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/discordjs/discordjs-original.svg"
-              alt="Discord.js"><span class="tooltip-text">Discord.js</span></div>
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="_replyto" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit" style="text-align: center; margin: 0 auto">
+            Send Message
+          </button>
+        </form>
+      </section>
+
+      <footer class="fade-in">
+        <p>© 2025 ItsNixk. All Rights Reserved.</p>
+        <div class="social">
+          <a href="https://github.com/ItsNixk" target="_blank">GitHub</a>
+          <a href="https://discord.itsnick.io" target="_blank">Discord</a>
         </div>
-      </div>
-    </section>
+      </footer>
+    </div>
 
-    <section id="experience" class="fade-in" style="text-align: center; margin: 0 auto;">
-      <h2>Experience</h2>
-      <div class="experience">
-        <div class="job">
-          <h3>Founder of ItsNixk</h3>
-          <span>2025 - Current</span>
-          <p>Founded a software development business specializing in custom bot development, server
-            administration, and community tools. Responsibilities include:</p>
-          <ul style="display: inline-block; text-align: left;">
-            <li>Managing client relationships and project deliverables</li>
-            <li>Developing custom software solutions for diverse client needs</li>
-            <li>Overseeing technical infrastructure and service quality</li>
-          </ul>
-        </div>
-        <div class="job">
-          <h3>Support Staff for RelyHost</h3>
-          <span>2025 - Current</span>
-          <p>Provide comprehensive technical support and solutions for VPS and web hosting clients, ensuring optimal
-            server performance and customer satisfaction.</p>
-        </div>
-        <div class="job">
-          <h3>Software Engineer/Support Staff for Phoenix Development</h3>
-          <span>2024 - Current</span>
-          <p>Lead software development initiatives and provide technical support for PhoenixCAD platform, focusing on:
-          </p>
-          <ul style="display: inline-block; text-align: left;">
-            <li>Developing and maintaining custom software solutions for community projects</li>
-            <li>Delivering exceptional user support and troubleshooting assistance</li>
-            <li>Ensuring optimal system performance and user experience</li>
-          </ul>
-        </div>
-        <div class="job">
-          <h3>Management for After Hours Development</h3>
-          <span>2023 - 2025</span>
-          <p>Lead the development and delivery of custom community solutions while managing client relationships. Key
-            responsibilities include:</p>
-          <ul style="display: inline-block; text-align: left;">
-            <li>Overseeing project lifecycles from conception to deployment</li>
-            <li>Ensuring exceptional client support and communication</li>
-            <li>Managing payment processing and financial operations</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="public" class="fade-in" style="text-align: center; margin: 0 auto;">
-      <h2>Public Releases</h2>
-      <p>Most projects are private and not released to the public. However, you can check out some of my public work:
-      </p>
-      <ul>
-        <li><a href="https://github.com/ItsNixk/fivem-admin-bot" target="_blank">FiveM Discord Admin Bot</a></li>
-      </ul>
-    </section>
-
-    <section id="contact" class="fade-in" style="text-align: center; margin: 0 auto;">
-      <h2>Contact Us</h2>
-      <form action="https://formspree.io/f/xnnpkqpd" method="POST">
-        <label for="name">Your Name</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="_replyto" required>
-
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
-        <button type="submit" style="text-align: center; margin: 0 auto;">Send Message</button>
-      </form>
-    </section>
-
-    <footer class="fade-in">
-      <p>© 2025 ItsNixk. All Rights Reserved.</p>
-      <div class="social">
-        <a href="https://github.com/ItsNixk" target="_blank">GitHub</a>
-        <a href="https://discord.itsnick.io" target="_blank">Discord</a>
-      </div>
-    </footer>
-  </div>
-
-  <!-- Custom Script (Matrix effect and scroll reveal) -->
-  <script src="script.js"></script>
-</body>
-
+    <!-- Custom Script (Matrix effect and scroll reveal) -->
+    <script src="script.js"></script>
+  </body>
 </html>
