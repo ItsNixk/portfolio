@@ -218,23 +218,6 @@ footer {
   border-top: 1px solid #30363d;
 }
 
-footer .social {
-  margin-top: 0.5rem;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-footer .social a {
-  color: #8b949e;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-footer .social a:hover {
-  color: #026f71;
-}
-
 /* Fade-in Animation */
 .fade-in {
   opacity: 0;
