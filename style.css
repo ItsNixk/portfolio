@@ -267,20 +267,6 @@ footer .social a:hover {
   transform: scale(1.2);
 }
 
-/* Theme Toggle */
-body.light-mode {
-  background: #f4f4f4;
-  color: #111;
-}
-
-body.light-mode .container {
-  background: #fff;
-}
-
-body.light-mode a:hover {
-  color: #333;
-}
-
 /* Skills Icons Text */
 .tooltip {
   position: relative;
