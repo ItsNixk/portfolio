@@ -5,292 +5,728 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ItsNixk - Portfolio</title>
+  <title>ItsNixk - Full-Stack Developer & System Architect</title>
 
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
 
-  <meta property="og:title" content="ItsNixk - Portfolio" />
+  <meta property="og:title" content="ItsNixk - Full-Stack Developer Portfolio" />
   <meta property="og:site_name" content="ItsNixk" />
   <meta property="og:url" content="https://www.itsnick.xyz/" />
-  <meta property="og:description" content="Hey! My name is Nick, I am a Software Engineer and PC Gamer. Thanks for checking out my portfolio. I specialize in bot development, server administration, and community tools primarily focused around FiveM,
-    TeamSpeak, and Discord." />
+  <meta property="og:description"
+    content="Full-Stack Developer specializing in NestJS, Angular, FiveM development, and enterprise-grade hosting solutions. Crafting exceptional digital experiences." />
   <meta property="og:type" content="website" />
-  <meta name="theme-color" content="#026f71" />
-  <meta property="og:image" content="https://legal.itsnick.xyz/portfolio/images/favicon.ico" />
+  <meta name="theme-color" content="#00d9ff" />
+  <meta property="og:image" content="https://www.itsnick.xyz/images/favicon.png" />
 </head>
 
 <body>
-  <canvas id="matrix"></canvas>
-
-  <div class="container">
-    <header class="fade-in">
-      <img src="./images/memoji.png" alt="ItsNixk" width="80" />
-      <h1>ItsNixk</h1>
-      <p>Full-Stack Developer &amp; System Admin</p>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#public">Releases</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="https://github.com/ItsNixk" target="_blank">GitHub</a></li>
-          <li><a href="https://discord.gg/xxC7yNP6hv" target="_blank">Discord</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <section id="about" class="fade-in" style="text-align: center; margin: 0 auto">
-      <h2>About Me</h2>
-      <p>
-        Hey! My name is Nick, I am a Software Engineer and PC Gamer. Thanks
-        for checking out my portfolio.
-      </p>
-      <p>
-        I specialize in bot development, server administration, and community
-        tools primarily focused around FiveM, TeamSpeak, and Discord.
-      </p>
-    </section>
-
-    <section id="skills" class="fade-in" style="text-align: center; margin: 0 auto">
-      <h2>Technical Skills</h2>
-      <div class="skills-grid">
-        <div class="icon-grid">
-          <div class="tooltip">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-original.svg"
-              alt="Ubuntu" /><span class="tooltip-text">Ubuntu</span>
-          </div>
-          <div class="tooltip">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg"
-              alt="Windows" /><span class="tooltip-text">Windows</span>
-          </div>
-          <div class="tooltip">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/debian/debian-original.svg"
-              alt="Debian" /><span class="tooltip-text">Debian</span>
-          </div>
-          <div class="tooltip">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/portainer/portainer-original.svg"
-              alt="Portainer" /><span class="tooltip-text">Portainer</span>
-          </div>
-          <div class="tooltip">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure" /><span
-              class="tooltip-text">Azure</span>
-          </div>
-          <div class="tooltip">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" /><span
-              class="tooltip-text">Git</span>
-          </div>
-          <div class="tooltip">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg"
-              alt="GitLab" /><span class="tooltip-text">GitLab</span>
-          </div>
-          <div class="tooltip">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-original.svg"
-              alt="Visual Studio" /><span class="tooltip-text">Visual Studio</span>
-          </div>
-          <div class="tooltip">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
-              alt="Visual Studio Code" /><span class="tooltip-text">Visual Studio Code</span>
-          </div>
-          <div class="tooltip">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-original.svg"
-              alt="Trello" /><span class="tooltip-text">Trello</span>
-          </div>
-          <div class="tooltip">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" alt="Jira" /><span
-              class="tooltip-text">Jira</span>
-          </div>
-          <div class="tooltip">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cloudflare/cloudflare-original.svg"
-              alt="Cloudflare" /><span class="tooltip-text">Cloudflare</span>
-          </div>
-          <div class="tooltip">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
-              alt="Amazon Web Services" /><span class="tooltip-text">Amazon Web Services</span>
-          </div>
-          <div class="tooltip">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg"
-              alt="Google Cloud" /><span class="tooltip-text">Google Cloud</span>
-          </div>
-          <div class="tooltip">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" alt="NGINX" /><span
-              class="tooltip-text">NGINX</span>
-          </div>
-          <div class="tooltip">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg"
-              alt="Apache" /><span class="tooltip-text">Apache</span>
-          </div>
-          <div class="tooltip">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/composer/composer-original.svg"
-              alt="Composer" /><span class="tooltip-text">Composer</span>
-          </div>
-          <div class="tooltip">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" /><span
-              class="tooltip-text">MySQL</span>
-          </div>
-          <div class="tooltip">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mariadb/mariadb-original.svg"
-              alt="MariaDB" /><span class="tooltip-text">MariaDB</span>
-          </div>
-          <div class="tooltip">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
-              alt="MongoDB" /><span class="tooltip-text">MongoDB</span>
-          </div>
-          <div class="tooltip">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis" /><span
-              class="tooltip-text">Redis</span>
-          </div>
-          <div class="tooltip">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" /><span
-              class="tooltip-text">C#</span>
-          </div>
-          <div class="tooltip">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-plain-wordmark.svg"
-              alt=".NET" /><span class="tooltip-text">.NET</span>
-          </div>
-          <div class="tooltip">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-original.svg" alt="LUA" /><span
-              class="tooltip-text">LUA</span>
-          </div>
-          <div class="tooltip">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" /><span
-              class="tooltip-text">PHP</span>
-          </div>
-          <div class="tooltip">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg"
-              alt="Laravel" /><span class="tooltip-text">Laravel</span>
-          </div>
-          <div class="tooltip">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-              alt="JavaScript" /><span class="tooltip-text">JavaScript</span>
-          </div>
-          <div class="tooltip">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
-              alt="TypeScript" /><span class="tooltip-text">TypeScript</span>
-          </div>
-          <div class="tooltip">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" /><span
-              class="tooltip-text">HTML</span>
-          </div>
-          <div class="tooltip">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" /><span
-              class="tooltip-text">CSS</span>
-          </div>
-          <div class="tooltip">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-              alt="Node.js" /><span class="tooltip-text">Node.js</span>
-          </div>
-          <div class="tooltip">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg"
-              alt="Angular" /><span class="tooltip-text">Angular</span>
-          </div>
-          <div class="tooltip">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/discordjs/discordjs-original.svg"
-              alt="Discord.js" /><span class="tooltip-text">Discord.js</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="experience" class="fade-in" style="text-align: center; margin: 0 auto">
-      <h2>Experience</h2>
-      <div class="experience">
-        <div class="job">
-          <h3>Founder of ItsNixk</h3>
-          <span>2025 - Current</span>
-          <p>
-            Founded a hosting company offering reliable and affordable DirectAdmin web hosting and Discord bot hosting.
-            Built to support developers, startups, and communities with high-performance infrastructure and seamless
-            automation.
-            Key responsibilities include:
-          </p>
-          <ul style="display: inline-block; text-align: left">
-            <li>Managing hosting infrastructure and service uptime across multiple platforms</li>
-            <li>Supporting customers through billing, deployment, and technical support</li>
-            <li>Automating panel operations and enhancing user experience through custom tools</li>
-            <li>Overseeing business growth, client acquisition, and community partnerships</li>
-          </ul>
-        </div>
-        <div class="job">
-          <h3>Support Staff for RelyHost</h3>
-          <span>2025 - Current</span>
-          <p>
-            Provide comprehensive technical support and solutions for VPS and
-            web hosting clients, ensuring optimal server performance and
-            customer satisfaction.
-          </p>
-        </div>
-        <div class="job">
-          <h3>Software Engineer/Support Staff for Phoenix Development</h3>
-          <span>2024 - Current</span>
-          <p>
-            Contribute to the development and support of PhoenixCAD, a roleplay CAD/MDT platform. Responsibilities
-            include:
-          </p>
-          <ul style="display: inline-block; text-align: left">
-            <li>Implementing updates, fixes, and feature enhancements across the CAD system</li>
-            <li>Providing user assistance and onboarding support to customers and communities</li>
-            <li>Collaborating with the dev team to ensure performance, security, and scalability</li>
-          </ul>
-        </div>
-        <div class="job">
-          <h3>Management for After Hours Development</h3>
-          <span>2023 - 2025</span>
-          <p>
-            Oversaw delivery of custom FiveM and web-based solutions for community clients. Acted as the primary point
-            of contact for both technical and business operations. Responsibilities included:
-          </p>
-          <ul style="display: inline-block; text-align: left">
-            <li>Managing scoped projects from consultation through deployment</li>
-            <li>Coordinating between developers and clients to ensure timely delivery</li>
-            <li>Handling payments, estimates, and service documentation</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="public" class="fade-in" style="text-align: center; margin: 0 auto">
-      <h2>Public Releases</h2>
-      <p>
-        Here are some of my public projects. Most of my work is private, but feel free to check these out:
-      </p>
-      <ul>
-        <li>
-            <a href="https://github.com/ItsNixk/fivem-admin-bot" target="_blank">FiveM Discord Admin Bot</a>
-        </li>
-        <li>
-            <a href="https://github.com/ItsNixk/portfolio" target="_blank">This Portfolio Page</a>
-        </li>
-      </ul>
-    </section>
-
-    <section id="contact" class="fade-in" style="text-align: center; margin: 0 auto">
-      <h2>Contact Us</h2>
-      <form action="https://formspree.io/f/xnnpkqpd" method="POST">
-        <label for="name">Your Name</label>
-        <input type="text" id="name" name="name" required />
-
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="_replyto" required />
-
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
-        <button type="submit" style="text-align: center; margin: 0 auto">
-          Send Message
-        </button>
-      </form>
-    </section>
-
-    <footer class="fade-in">
-      <p>© 2025 ItsNixk. All Rights Reserved.</p>
-    </footer>
+  <!-- Animated Background -->
+  <div class="background-container">
+    <canvas id="matrix"></canvas>
+    <div class="gradient-overlay"></div>
   </div>
 
-  <!-- Custom Script (Matrix effect and scroll reveal) -->
+  <!-- Floating Navigation -->
+  <nav class="floating-nav">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>
+      <span class="logo-text">ItsNixk</span>
+      <span class="logo-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#hero" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-social">
+      <a href="https://github.com/ItsNixk" target="_blank" class="social-icon" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+        </svg>
+      </a>
+      <a href="https://discord.com/users/659864108895698970" target="_blank" class="social-icon" aria-label="Discord">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z" />
+        </svg>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="hero-content">
+      <div class="hero-avatar">
+        <div class="avatar-ring"></div>
+        <img src="images/memoji.png" alt="ItsNixk" class="avatar-image" />
+        <div class="status-indicator"></div>
+      </div>
+      <div class="hero-text">
+        <h1 class="hero-title">
+          <span class="greeting">Hi, I'm</span>
+          <span class="name-highlight">Nick</span>
+        </h1>
+        <div class="typing-container">
+          <span class="typing-prefix">I build</span>
+          <span class="typed-text"></span>
+          <span class="cursor">|</span>
+        </div>
+        <p class="hero-description">
+          Full-Stack Developer crafting exceptional digital experiences with modern technologies.
+          Specialized in NestJS, Angular, and FiveM development.
+        </p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary">
+            <span>Get In Touch</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="#projects" class="btn btn-secondary">
+            <span>View Projects</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">&lt;about&gt;</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-content">
+        <div class="about-card">
+          <div class="card-glow"></div>
+          <div class="about-text">
+            <p class="lead-text">
+              I'm a passionate full-stack developer with a focus on building scalable,
+              performant applications that solve real-world problems.
+            </p>
+            <p>
+              My journey in software development has led me to specialize in modern web technologies
+              and gaming server infrastructure. I thrive on creating seamless user experiences
+              and robust backend systems that power communities and businesses.
+            </p>
+            <p>
+              When I'm not coding, you'll find me optimizing server performance, exploring new
+              technologies, or contributing to open-source projects. I believe in writing clean,
+              maintainable code and building solutions that make a difference.
+            </p>
+          </div>
+          <div class="stats-grid">
+            <div class="stat-item">
+              <span class="stat-number">6+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">100+</span>
+              <span class="stat-label">Projects Completed</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Client Satisfaction</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">&lt;skills&gt;</span>
+        <h2 class="section-title">Technical Expertise</h2>
+      </div>
+      <div class="skills-container">
+        <!-- Frontend -->
+        <div class="skill-category">
+          <h3 class="category-title">
+            <span class="icon">🎨</span>
+            Frontend Development
+          </h3>
+          <div class="skill-grid">
+            <div class="skill-item"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg"
+                alt="Angular"><span>Angular</span></div>
+            <div class="skill-item"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                alt="TypeScript"><span>TypeScript</span></div>
+            <div class="skill-item"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                alt="JavaScript"><span>JavaScript</span></div>
+            <div class="skill-item"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                alt="HTML5"><span>HTML5</span></div>
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                alt="CSS3"><span>CSS3</span></div>
+            <div class="skill-item"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eslint/eslint-original.svg"
+                alt="ESLint"><span>ESLint</span></div>
+            <div class="skill-item"><img src="https://cdn.simpleicons.org/prettier/F7B93E"
+                alt="Prettier"><span>Prettier</span></div>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="skill-category">
+          <h3 class="category-title">
+            <span class="icon">⚙️</span>
+            Backend Development
+          </h3>
+          <div class="skill-grid">
+            <div class="skill-item"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                alt="Node.js"><span>Node.js</span></div>
+            <div class="skill-item"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg"
+                alt="NestJS"><span>NestJS</span></div>
+            <div class="skill-item"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                alt="Express.js"><span>Express.js</span></div>
+            <div class="skill-item"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+                alt="C#"><span>C#</span></div>
+            <div class="skill-item"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-plain-wordmark.svg"
+                alt=".NET"><span>.NET</span></div>
+            <div class="skill-item"><img src="https://cdn.simpleicons.org/dotnet/512BD4"
+                alt="ASP.NET Core"><span>ASP.NET Core</span></div>
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+                alt="PHP"><span>PHP</span></div>
+            <div class="skill-item"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg"
+                alt="Laravel"><span>Laravel</span></div>
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-original.svg"
+                alt="Lua"><span>Lua</span></div>
+            <div class="skill-item"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+                alt="C++"><span>C++</span></div>
+            <div class="skill-item"><img src="https://cdn.simpleicons.org/typeorm/FE0902"
+                alt="TypeORM"><span>TypeORM</span></div>
+            <div class="skill-item"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongoose/mongoose-original.svg"
+                alt="Mongoose"><span>Mongoose</span></div>
+            <div class="skill-item"><img src="https://cdn.simpleicons.org/socketdotio/010101"
+                alt="Socket.io"><span>Socket.io</span></div>
+          </div>
+        </div>
+
+        <!-- Database -->
+        <div class="skill-category">
+          <h3 class="category-title">
+            <span class="icon">🗄️</span>
+            Databases
+          </h3>
+          <div class="skill-grid">
+            <div class="skill-item"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                alt="MySQL"><span>MySQL</span></div>
+            <div class="skill-item"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mariadb/mariadb-original.svg"
+                alt="MariaDB"><span>MariaDB</span></div>
+            <div class="skill-item"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                alt="PostgreSQL"><span>PostgreSQL</span></div>
+            <div class="skill-item"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg"
+                alt="SQLite"><span>SQLite</span></div>
+            <div class="skill-item"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg"
+                alt="Oracle"><span>Oracle Database</span></div>
+            <div class="skill-item"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                alt="MongoDB"><span>MongoDB</span></div>
+            <div class="skill-item"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg"
+                alt="Redis"><span>Redis</span></div>
+          </div>
+        </div>
+
+        <!-- DevOps & Cloud -->
+        <div class="skill-category">
+          <h3 class="category-title">
+            <span class="icon">☁️</span>
+            DevOps & Cloud
+          </h3>
+          <div class="skill-grid">
+            <div class="skill-item"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                alt="Docker"><span>Docker</span></div>
+            <div class="skill-item"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg"
+                alt="Kubernetes"><span>Kubernetes</span></div>
+            <div class="skill-item"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg"
+                alt="NGINX"><span>NGINX</span></div>
+            <div class="skill-item"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg"
+                alt="Azure"><span>Azure</span></div>
+            <div class="skill-item"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
+                alt="AWS"><span>AWS</span></div>
+            <div class="skill-item"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg"
+                alt="GCP"><span>Google Cloud</span></div>
+            <div class="skill-item"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cloudflare/cloudflare-original.svg"
+                alt="Cloudflare"><span>Cloudflare</span></div>
+            <div class="skill-item"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg"
+                alt="GitLab CI/CD"><span>GitLab CI/CD</span></div>
+            <div class="skill-item"><img src="https://cdn.simpleicons.org/githubactions/2088FF"
+                alt="GitHub Actions"><span>GitHub Actions</span></div>
+            <div class="skill-item"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg"
+                alt="Grafana"><span>Grafana</span></div>
+            <div class="skill-item"><img src="https://cdn.simpleicons.org/sentry/362D59"
+                alt="Sentry"><span>Sentry</span></div>
+          </div>
+        </div>
+
+        <!-- Tools & Platforms -->
+        <div class="skill-category">
+          <h3 class="category-title">
+            <span class="icon">🛠️</span>
+            Tools & Platforms
+          </h3>
+          <div class="skill-grid">
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                alt="Git"><span>Git</span></div>
+            <div class="skill-item"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                alt="GitHub"><span>GitHub</span></div>
+            <div class="skill-item"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg"
+                alt="GitLab"><span>GitLab</span></div>
+            <div class="skill-item"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                alt="VS Code"><span>VS Code</span></div>
+            <div class="skill-item"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-original.svg"
+                alt="Visual Studio"><span>Visual Studio</span></div>
+            <div class="skill-item"><img src="https://cdn.simpleicons.org/postman/FF6C37"
+                alt="Postman"><span>Postman</span></div>
+            <div class="skill-item"><img src="https://cdn.simpleicons.org/swagger/85EA2D"
+                alt="Swagger"><span>Swagger</span></div>
+            <div class="skill-item"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/powershell/powershell-original.svg"
+                alt="PowerShell"><span>PowerShell</span></div>
+            <div class="skill-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/PuTTY_Icon.svg/400px-PuTTY_Icon.svg.png" alt="PuTTY"><span>PuTTY</span>
+            </div>
+            <div class="skill-item"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-original.svg"
+                alt="Ubuntu"><span>Ubuntu</span></div>
+            <div class="skill-item"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/debian/debian-original.svg"
+                alt="Debian"><span>Debian</span></div>
+          </div>
+        </div>
+
+        <!-- Security & Networking -->
+        <div class="skill-category">
+          <h3 class="category-title">
+            <span class="icon">🔒</span>
+            Security & Networking
+          </h3>
+          <div class="skill-grid">
+            <div class="skill-item"><img src="https://cdn.simpleicons.org/wireshark/1679A7"
+                alt="Wireshark"><span>Wireshark</span></div>
+            <div class="skill-item"><img src="https://cdn.simpleicons.org/letsencrypt/003A70"
+                alt="Let's Encrypt"><span>Let's Encrypt</span></div>
+            <div class="skill-item"><img src="https://cdn.simpleicons.org/openssl/721412"
+                alt="SSL/TLS"><span>SSL/TLS</span></div>
+          </div>
+        </div>
+
+        <!-- Gaming & Specialized -->
+        <div class="skill-category">
+          <h3 class="category-title">
+            <span class="icon">🎮</span>
+            Gaming & Specialized
+          </h3>
+          <div class="skill-grid">
+            <div class="skill-item"><img src="https://cdn.simpleicons.org/fivem/F40552" alt="FiveM"><span>FiveM</span>
+            </div>
+            <div class="skill-item"><img src="https://cdn.simpleicons.org/teamspeak/2580C3"
+                alt="TeamSpeak 3"><span>TeamSpeak 3</span></div>
+            <div class="skill-item"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/discordjs/discordjs-original.svg"
+                alt="Discord.js"><span>Discord.js</span></div>
+            <div class="skill-item"><img src="https://cdn.simpleicons.org/discord/5865F2"
+                alt="Discord Bot Dev"><span>Discord Bots</span></div>
+          </div>
+        </div>
+
+        <!-- Web Servers & Package Managers -->
+        <div class="skill-category">
+          <h3 class="category-title">
+            <span class="icon">📦</span>
+            Web Servers & Package Managers
+          </h3>
+          <div class="skill-grid">
+            <div class="skill-item"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg"
+                alt="Apache"><span>Apache</span></div>
+            <div class="skill-item"><img src="https://cdn.simpleicons.org/caddy/1F88C0" alt="Caddy"><span>Caddy</span>
+            </div>
+            <div class="skill-item"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/composer/composer-original.svg"
+                alt="Composer"><span>Composer</span></div>
+            <div class="skill-item"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuget/nuget-original.svg"
+                alt="NuGet"><span>NuGet</span></div>
+          </div>
+        </div>
+
+        <!-- System Administration -->
+        <div class="skill-category">
+          <h3 class="category-title">
+            <span class="icon">⚡</span>
+            System Administration
+          </h3>
+          <div class="skill-grid">
+            <div class="skill-item"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+                alt="Linux"><span>Linux</span></div>
+            <div class="skill-item"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg"
+                alt="Windows Server"><span>Windows Server</span></div>
+            <div class="skill-item"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg"
+                alt="macOS"><span>macOS</span></div>
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg"
+                alt="Bash"><span>Bash Scripting</span></div>
+            <div class="skill-item"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/powershell/powershell-original.svg"
+                alt="PowerShell"><span>PowerShell Scripting</span></div>
+            <div class="skill-item"><img src="https://cdn.simpleicons.org/gnubash/4EAA25" alt="Cron"><span>Cron
+                Jobs</span></div>
+            <div class="skill-item"><img src="https://cdn.simpleicons.org/cloudflare/F38020" alt="DNS"><span>DNS
+                Management</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section experience-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">&lt;experience&gt;</span>
+        <h2 class="section-title">Professional Journey</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2025 - Present</span>
+            <h3>Founder & CEO</h3>
+            <h4>ItsNixk Hosting</h4>
+            <p>
+              Founded and scaled a hosting company delivering enterprise-grade DirectAdmin web hosting
+              and Discord bot infrastructure to developers and communities worldwide.
+            </p>
+            <ul class="achievement-list">
+              <li>Architected and deployed high-availability hosting infrastructure across multiple regions</li>
+              <li>Developed custom automation tools reducing deployment time by 70%</li>
+              <li>Built comprehensive customer support system handling 100+ monthly tickets</li>
+              <li>Achieved 99.9% uptime through proactive monitoring and optimization</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2025 - Present</span>
+            <h3>Support Specialist</h3>
+            <h4>RelyHost</h4>
+            <p>
+              Deliver expert-level technical support for VPS and web hosting infrastructure,
+              ensuring optimal performance and client satisfaction.
+            </p>
+            <ul class="achievement-list">
+              <li>Resolved critical server issues with 95% first-contact resolution rate</li>
+              <li>Optimized client server configurations improving performance by 40%</li>
+              <li>Created comprehensive documentation reducing support ticket volume</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2024 - Present</span>
+            <h3>Software Engineer & Senior Support Specialist</h3>
+            <h4>Phoenix Development, LLC</h4>
+            <p>
+              Contribute to the development and support of PhoenixCAD, an advanced roleplay CAD/MDT platform serving
+              gaming communities with mission-critical dispatch and records management.
+            </p>
+            <ul class="achievement-list">
+              <li>Implementing updates, fixes, and feature enhancements across the CAD system</li>
+              <li>Provided tier-3 support and customer onboarding for enterprise clients</li>
+              <li>Collaborated with development team on security audits and penetration testing</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2024 - 2025</span>
+            <h3>Chief Technology Officer</h3>
+            <h4>After Hours Hosting, LLC</h4>
+            <p>
+              Led technology strategy and infrastructure development for a multi-region hosting provider
+              serving developers and gaming communities. Oversaw all technical operations, architecture
+              decisions, and engineering team initiatives.
+            </p>
+            <ul class="achievement-list">
+              <li>Architected scalable cloud infrastructure supporting 500+ active hosting accounts across multiple data
+                centers</li>
+              <li>Led development of proprietary automation platform reducing provisioning time from hours to minutes
+              </li>
+              <li>Established DevOps practices and CI/CD pipelines improving deployment reliability by 85%</li>
+              <li>Implemented comprehensive monitoring and alerting systems achieving 99.9% uptime SLA</li>
+              <li>Managed technical roadmap and technology stack decisions for all product lines</li>
+              <li>Built and mentored engineering team focused on infrastructure automation and customer tooling</li>
+              <li>Designed disaster recovery protocols and backup strategies ensuring zero data loss incidents</li>
+              <li>Optimized resource allocation and server configurations reducing operational costs by 30%</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2023 - Present</span>
+            <h3>Software Development Manager</h3>
+            <h4>After Hours Development</h4>
+            <p>
+              Led technical delivery of custom FiveM and web solutions, managing full project
+              lifecycle from consultation through deployment and maintenance.
+            </p>
+            <ul class="achievement-list">
+              <li>Managed 20+ projects with 100% on-time delivery rate</li>
+              <li>Coordinated cross-functional teams of developers and designers</li>
+              <li>Streamlined client communication reducing project scope creep by 60%</li>
+              <li>Established quality assurance processes ensuring bug-free releases</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">&lt;projects&gt;</span>
+        <h2 class="section-title">Featured Work</h2>
+        <p class="section-subtitle">A selection of my recent public projects</p>
+      </div>
+      <div class="projects-grid">
+        <a href="https://github.com/ItsNixk/fivem-admin-bot" target="_blank" class="project-card-link">
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-overlay">
+                <div class="project-link-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+                  </svg>
+                </div>
+              </div>
+              <div class="project-bg">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="rgba(0, 217, 255, 0.1)"
+                    d="M44.7,-76.4C58.8,-69.2,71.8,-59.1,79.6,-45.8C87.4,-32.6,90,-16.3,88.5,-0.9C87,14.6,81.4,29.2,73.1,42.2C64.8,55.2,53.8,66.6,40.3,74.1C26.8,81.6,10.8,85.2,-4.3,82.8C-19.4,80.4,-33.8,72,-45.8,62.1C-57.8,52.2,-67.4,40.8,-74.3,27.4C-81.2,14,-85.4,-1.4,-83.1,-15.9C-80.8,-30.4,-72,-44,-61.1,-56.4C-50.2,-68.8,-37.2,-79.9,-22.8,-85.2C-8.4,-90.5,6.4,-90,21.2,-85.8C36,-81.6,51.8,-73.7,44.7,-76.4Z"
+                    transform="translate(100 100)" />
+                </svg>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">
+                FiveM Discord Admin Bot
+                <svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+                </svg>
+              </h3>
+              <p class="project-description">
+                A comprehensive Discord bot for FiveM server administration with advanced moderation
+                features, player management, and real-time server monitoring capabilities.
+              </p>
+              <div class="project-tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">Discord.js</span>
+                <span class="tag">FiveM</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://github.com/ItsNixk/portfolio" target="_blank" class="project-card-link">
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-overlay">
+                <div class="project-link-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+                  </svg>
+                </div>
+              </div>
+              <div class="project-bg">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="rgba(0, 217, 255, 0.1)"
+                    d="M39.5,-65.3C50.4,-58.5,58.1,-46.3,65.3,-33.3C72.5,-20.3,79.2,-6.5,79.8,7.6C80.4,21.7,74.9,36.1,66.3,47.8C57.7,59.5,46,68.5,33.1,73.4C20.2,78.3,6.1,79.1,-7.6,77.1C-21.3,75.1,-34.6,70.3,-46.8,63.8C-59,57.3,-70.1,49.1,-76.5,38.1C-82.9,27.1,-84.6,13.5,-82.8,0.9C-81,-11.7,-75.7,-23.4,-68.3,-33.8C-60.9,-44.2,-51.4,-53.3,-40.3,-59.9C-29.2,-66.5,-16.6,-70.6,-2.8,-70.1C11,-69.6,28.6,-72.1,39.5,-65.3Z"
+                    transform="translate(100 100)" />
+                </svg>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">
+                Modern Portfolio Website
+                <svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+                </svg>
+              </h3>
+              <p class="project-description">
+                A sleek, modern portfolio showcasing development work with interactive animations,
+                responsive design, and optimized performance.
+              </p>
+              <div class="project-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">&lt;contact&gt;</span>
+        <h2 class="section-title">Let's Work Together</h2>
+        <p class="section-subtitle">Have a project in mind? I'd love to hear about it.</p>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>Get in touch</h3>
+          <p>
+            I'm always interested in hearing about new projects and opportunities.
+            Whether you have a question or just want to say hi, feel free to reach out!
+          </p>
+          <div class="contact-methods">
+            <a href="https://github.com/ItsNixk" target="_blank" class="contact-method">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+              </svg>
+              <div>
+                <span class="method-label">GitHub</span>
+                <span class="method-value">@ItsNixk</span>
+              </div>
+            </a>
+            <a href="https://discord.com/users/659864108895698970" target="_blank" class="contact-method">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z" />
+              </svg>
+              <div>
+                <span class="method-label">Discord</span>
+                <span class="method-value">Message Me</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form-wrapper">
+          <form action="https://formspree.io/f/xnnpkqpd" method="POST" class="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="_replyto" placeholder="john@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."
+                required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-submit">
+              <span>Send Message</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="logo-bracket">&lt;</span>
+          <span class="logo-text">ItsNixk</span>
+          <span class="logo-bracket">/&gt;</span>
+        </div>
+        <p class="footer-text">
+          Building digital experiences with passion and precision.
+        </p>
+        <div class="footer-social">
+          <a href="https://github.com/ItsNixk" target="_blank" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg>
+          </a>
+          <a href="https://discord.com/users/659864108895698970" target="_blank" aria-label="Discord">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 ItsNixk. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 
